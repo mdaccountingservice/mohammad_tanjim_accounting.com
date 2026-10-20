@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accounting and bookkeeping services by Mohammad Tanjim, an accountant with 8+ years of experience in bookkeeping, financial reporting, reconciliations, payroll, budgeting and VAT/tax support.">
+  <title>Mohammad Tanjim | Accountant & Bookkeeper</title>
+  <style>
+    :root{--navy:#10243a;--navy2:#18344e;--gold:#d9b978;--ink:#172638;--muted:#5f6d7b;--pale:#f4f7fa;--white:#fff;--line:#e2e8ef}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--navy);color:white}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:750;letter-spacing:.2px}
+    .logo{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--gold);color:var(--navy);font-size:22px;font-weight:900}
+    .navlinks{display:flex;gap:24px;flex-wrap:wrap}
+    .navlinks a{text-decoration:none;color:#e5edf5;font-size:14px}
+    .hero{padding:78px 0 88px;display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:center}
+    .eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px}
+    h1{font-size:clamp(38px,5.3vw,64px);line-height:1.08;letter-spacing:-1.7px;margin:14px 0 22px}
+    .hero p{font-size:18px;color:#d5e0eb;max-width:650px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;text-decoration:none;padding:12px 19px;border-radius:9px;font-weight:750;font-size:14px}
+    .btn-gold{background:var(--gold);color:var(--navy)}
+    .btn-outline{border:1px solid #7e91a4;color:white}
+    .hero-card{border:1px solid #3d5267;border-radius:18px;padding:26px;background:#183047}
+    .hero-card .big{font-size:44px;color:var(--gold);font-weight:850;line-height:1.2}
+    .hero-card p{font-size:14px;margin:6px 0 22px}
+    .hero-card hr{border:0;border-top:1px solid #40556a;margin:20px 0}
+    section{padding:76px 0}
+    .section-soft{background:var(--pale)}
+    .kicker{color:#967438;text-transform:uppercase;letter-spacing:1.7px;font-size:12px;font-weight:850}
+    h2{font-size:clamp(28px,3.5vw,40px);line-height:1.2;margin:8px 0 15px;letter-spacing:-.7px}
+    .intro{max-width:700px;color:var(--muted);margin:0 0 34px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service,.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:24px}
+    .service .icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f8f0df;color:#8d6b2b;font-size:21px;margin-bottom:14px}
+    h3{margin:0 0 8px;font-size:18px}
+    .service p,.panel p{margin:0;color:var(--muted);font-size:14px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .ticks{padding:0;list-style:none;margin:22px 0 0}
+    .ticks li{padding:8px 0 8px 28px;position:relative}
+    .ticks li:before{content:"✓";position:absolute;left:0;color:#0d9488;font-weight:900}
+    .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .tag{background:#eef3f7;border:1px solid #e1e8ef;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700;color:#294158}
+    .timeline{border-left:2px solid #d9c08c;padding-left:23px;margin-top:24px}
+    .job{position:relative;margin:0 0 25px}
+    .job:before{content:"";position:absolute;left:-30px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid white;box-shadow:0 0 0 1px #c5a765}
+    .job .date{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#8a6a30;font-weight:800}
+    .job h3{margin:3px 0}
+    .job p{margin:0;color:var(--muted);font-size:14px}
+    .contact{background:var(--navy);color:white}
+    .contact .intro{color:#d3deea}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact-item{border:1px solid #3d5267;border-radius:13px;padding:20px;background:#183047}
+    .contact-item small{display:block;color:#b7c7d6;text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:800}
+    .contact-item a,.contact-item span{display:block;margin-top:5px;color:white;text-decoration:none;overflow-wrap:anywhere}
+    footer{background:#0b1a29;color:#b8c5d1;padding:20px 0;font-size:12px}
+    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 0 62px}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:28px}.navlinks{gap:12px}.navlinks a{font-size:12px}}
+    @media(max-width:540px){.navlinks{display:none}.grid,.contact-grid{grid-template-columns:1fr}section{padding:55px 0}.hero-card{max-width:400px}}
+  </style>
+</head>
+<body>
+  <header id="home">
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#home"><span class="logo">T</span><span>Mohammad Tanjim<br><small style="font-weight:500;color:#c9d5e1">Accountant & Bookkeeper</small></span></a>
+        <div class="navlinks">
+          <a href="#services">Services</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Accounting • Bookkeeping • Reporting</div>
+          <h1>Reliable accounting.<br>Clearer decisions.</h1>
+          <p>Practical accounting and bookkeeping support to help businesses keep accurate records, understand their numbers and stay organised.</p>
+          <div class="actions">
+            <a class="btn btn-gold" href="#contact">Discuss Your Needs ↗</a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <div class="big">8+ Years</div>
+          <p>Accounting and bookkeeping experience across financial records, reporting and day-to-day accounting operations.</p>
+          <hr>
+          <strong>Tools I work with</strong>
+          <p>Tally Prime · Tally ERP 9 · Zoho Books · Microsoft Excel</p>
+          <hr>
+          <strong>Based in</strong>
+          <p style="margin-bottom:0">Biratnagar, Nepal</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services">
+      <div class="wrap">
+        <div class="kicker">What I can help with</div>
+        <h2>Accounting services for everyday business needs</h2>
+        <p class="intro">Support based on my professional experience in bookkeeping, reconciliations, payroll, financial reporting and accounting operations. The exact scope can be agreed to suit your business.</p>
+        <div class="grid">
+          <article class="service"><div class="icon">▤</div><h3>Bookkeeping & General Ledger</h3><p>Recording transactions, maintaining ledger accounts and keeping financial records organised.</p></article>
+          <article class="service"><div class="icon">↔</div><h3>Bank Reconciliation</h3><p>Matching bank activity with accounting records and investigating differences.</p></article>
+          <article class="service"><div class="icon">▥</div><h3>Financial Statements & Reports</h3><p>Preparing periodic financial statements, management reports and supporting schedules.</p></article>
+          <article class="service"><div class="icon">＋</div><h3>Accounts Payable & Receivable</h3><p>Maintaining supplier and customer records, invoices, balances and payment tracking.</p></article>
+          <article class="service"><div class="icon">◷</div><h3>Payroll & Cash Flow</h3><p>Processing payroll records, monitoring cash flow and supporting routine finance activities.</p></article>
+          <article class="service"><div class="icon">▦</div><h3>Budgeting, VAT & Tax Records</h3><p>Budget preparation, inventory and fixed-asset records, and VAT/tax documentation support in line with applicable requirements.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="about">
+      <div class="wrap about">
+        <div>
+          <div class="kicker">About me</div>
+          <h2>Detail-oriented. Practical. Dependable.</h2>
+          <p class="intro">I am an Accountant and Bookkeeper based in Biratnagar, Nepal, with over eight years of experience in accounting and finance operations. My work includes maintaining accurate books, preparing reports, managing payables and receivables, payroll, reconciliations and supporting audit and compliance processes.</p>
+          <p class="intro">I aim to help businesses maintain dependable financial records and make better-informed decisions through clear, organised accounting information.</p>
+          <h3>Languages</h3>
+          <div class="tags"><span class="tag">Maithili — Native</span><span class="tag">English — Professional</span><span class="tag">Nepali — Professional</span><span class="tag">Hindi — Professional</span></div>
+        </div>
+        <div class="panel">
+          <h3>Core competencies</h3>
+          <ul class="ticks">
+            <li>Bookkeeping and journal entries</li><li>Financial reporting and statement preparation</li><li>Accounts payable and receivable</li><li>Bank reconciliation and month-end closing</li><li>Payroll processing and cash flow monitoring</li><li>Budgeting, inventory and fixed assets</li><li>VAT/tax records and audit support</li>
+          </ul>
+          <h3 style="margin-top:26px">Software & technical skills</h3>
+          <div class="tags"><span class="tag">Tally Prime</span><span class="tag">Tally ERP 9</span><span class="tag">Zoho Books</span><span class="tag">Microsoft Excel</span><span class="tag">Saral Billing</span><span class="tag">Word & PowerPoint</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="kicker">Professional background</div>
+        <h2>Experience & education</h2>
+        <div class="about">
+          <div>
+            <h3>Professional experience</h3>
+            <div class="timeline">
+              <div class="job"><div class="date">March 2023 – Present</div><h3>Accountant · Utsav Footwear and Trade Industries</h3><p>Financial statements, general ledger, AP/AR, payroll, bank reconciliations, budgets, audit coordination and VAT/tax reporting.</p></div>
+              <div class="job"><div class="date">October 2020 – January 2023</div><h3>Accountant · Superior Motors</h3><p>Daily accounting transactions, bank reconciliations, ledger balances, journal entries, management reports and accounting records using Tally and Excel.</p></div>
+              <div class="job"><div class="date">July 2018 – June 2020</div><h3>Accountant · Amul Enterprises and Order Suppliers</h3><p>Daily bookkeeping, invoices, supplier bills, accounting transactions and monthly reconciliation support.</p></div>
+            </div>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <div class="panel" style="margin-top:20px"><div class="date">2023</div><h3>Bachelor of Business Studies (BBS)</h3><p>Tribhuvan University · Biratnagar, Nepal</p></div>
+            <div class="panel" style="margin-top:14px"><div class="date">2017</div><h3>Intermediate +2 Commerce</h3><p>Bhanu Memorial English Boarding School</p></div>
+            <div class="panel" style="margin-top:14px"><div class="date">2015</div><h3>S.L.C.</h3><p>Shree Jan Priya Higher Secondary School · Katahari, Nepal</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="kicker">Get in touch</div>
+        <h2>Let's discuss your accounting needs.</h2>
+        <p class="intro">Contact me to discuss the services you need, your current bookkeeping process and how I may be able to support your business.</p>
+        <div class="contact-grid">
+          <div class="contact-item"><small>Email</small><a href="mailto:tanjimnepal@gmail.com">tanjimnepal@gmail.com</a></div>
+          <div class="contact-item"><small>WhatsApp / Phone</small><a href="https://wa.me/9779819337926" target="_blank" rel="noopener">+977 9819337926 · Message on WhatsApp</a></div>
+          <div class="contact-item"><small>Location</small><span>Biratnagar, Nepal</span></div>
+          <div class="contact-item"><small>LinkedIn</small><a href="https://www.linkedin.com/in/mohammad-tanjim-9a8117282/" target="_blank" rel="noopener">View my LinkedIn profile ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year"></span> Mohammad Tanjim · Accountant & Bookkeeper</span><span>Accurate records. Clear financial insight.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
